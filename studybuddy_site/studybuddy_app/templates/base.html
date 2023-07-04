@@ -17,9 +17,10 @@
   
     <nav class="nav">
         {% block sidebar %}
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="/studybuddy/">StudyBuddy</a>
-        <a class="nav-link" href="/admin/">Admin</a>
+        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+        <a class="nav-link" href="{% url 'studybuddy_app:home' %}">StudyBuddy</a>
+        <a class="nav-link" href="{% url 'studybuddy_app:meetup.list' %}">Meetups</a>
+        <a class="nav-link" href="/admin">Admin</a>
 
 
         {% if user.is_authenticated %}

@@ -16,7 +16,7 @@ urlpatterns = [
     path("meetups/<int:pk>/delete", meetup_views.delete, name="meetup.delete"),
     path("meetups/<int:pk>/edit", meetup_views.edit, name="meetup.edit"),
 
-    path("", MeetupListView.as_view(), name="index"),
+    path("", MeetupListView.as_view(), name="home"),
 
     path("users/<int:pk>", user_views.detail, name="user.detail")
 ]

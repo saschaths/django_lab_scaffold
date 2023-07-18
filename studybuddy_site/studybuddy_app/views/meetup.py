@@ -115,3 +115,12 @@ def rsvp(request, pk):
     return HttpResponseRedirect(
         reverse("studybuddy_app:meetup.detail",
                 args=[meetup.id]))
+
+@login_required
+def cancel_rsvp(request, pk):
+    if request.user.is_authenticated:
+        meetup = Meetup.objects.get(pk=pk)
+        meetup.participants.remove(request.user)
+    return HttpResponseRedirect(
+        reverse("studybuddy_app:meetup.detail",
+                args=[meetup.id]))

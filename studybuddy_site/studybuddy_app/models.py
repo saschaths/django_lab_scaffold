@@ -47,7 +47,12 @@ class Meetup(models.Model):
         soon = timezone.now() + datetime.timedelta(days=2)
         return self.start_time >= timezone.now() and self.start_time <= soon
 
+    class Course(models.Model):
+        name = models.CharField(max_length=200)
+        description = models.TextField()
 
+        def __str__(self):
+            return self.name
 # many_to_many: https://docs.djangoproject.com/en/4.2/topics/db/examples/many_to_many/
 # user objects: https://docs.djangoproject.com/en/4.2/topics/auth/default/#user-objects
 # timezone https://docs.djangoproject.com/en/4.2/topics/i18n/timezones/

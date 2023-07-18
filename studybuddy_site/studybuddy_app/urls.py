@@ -3,11 +3,13 @@ from .views import user as user_views
 from .views import meetup as meetup_views
 from .views.meetup import MeetupListView
 from .views.meetup import MeetupDetailView
+from .views.course import CourseListView
 app_name = "studybuddy_app"
 
 urlpatterns = [
 
     path("meetups/<int:pk>/rsvp/", meetup_views.rsvp, name="meetup.rsvp"),
+    path("meetups/<int:pk>/cancel_rsvp/", meetup_views.cancel_rsvp, name="meetup.cancel_rsvp"),
 
     path("meetups/<int:pk>/", MeetupDetailView.as_view(), name="meetup.detail"),
     path("meetups", MeetupListView.as_view(), name="meetup.list"),
@@ -19,6 +21,7 @@ urlpatterns = [
     path("", MeetupListView.as_view(), name="home"),
 
     path("users/<int:pk>", user_views.detail, name="user.detail")
+    path('courses/', CourseListView.as_view(), name='course.list'),
 ]
 
 # https://restfulapi.net/

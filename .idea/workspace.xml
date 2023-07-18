@@ -5,15 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e0022cc-b67f-4dec-b35b-de8a86424fd7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/views/course.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/fixtures/meetup.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/fixtures/meetup.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/templates/studybuddy_app/meetup_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/templates/studybuddy_app/meetup_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/templates/studybuddy_app/meetup_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/templates/studybuddy_app/meetup_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/views/meetup.py" beforeDir="false" afterPath="$PROJECT_DIR$/studybuddy_site/studybuddy_app/views/meetup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,14 +36,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Sascha&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Sascha",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

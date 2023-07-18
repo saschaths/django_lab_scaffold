@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth import get_user_model
-
+from .models import Course
 from .models import Meetup
 
 
@@ -17,5 +17,8 @@ class MeetupAdmin(admin.ModelAdmin):
     ]
     list_display = ["title", "start_time"]
 
+class CourseAdmin(admin.ModelAdmin):
+    list_display = ["name", "description"]
 
+admin.site.register(Course, CourseAdmin)
 admin.site.register(Meetup, MeetupAdmin)

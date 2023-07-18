@@ -15,6 +15,12 @@
 
 <a href="{% url 'studybuddy_app:meetup.rsvp' meetup.id %}" name="rsvp">Participate</a>
 
+{% if user in participants %}
+<a href="{% url 'studybuddy_app:meetup.cancel_rsvp' meetup.id %}" name="cancel_rsvp">Cancel Participation</a>
+{% else %}
+<a href="{% url 'studybuddy_app:meetup.rsvp' meetup.id %}" name="rsvp">Participate</a>
+{% endif %}
+
 <h2>Participants</h2>
 
 {% for participant in participants %}
